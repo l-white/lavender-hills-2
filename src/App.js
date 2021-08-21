@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 import {
   BrowserRouter as Router,
   Route,
@@ -13,8 +13,9 @@ import Contact from './pages/Contact';
 import Footer from './components/Footer';
 
 
-const App = () => {
+class App extends Component {
 
+  render(){
   return (
     <Router>
       <div className="App container">
@@ -28,6 +29,6 @@ const App = () => {
       </div>
     </Router>
   );
-}
+}}
 
 export default App;
